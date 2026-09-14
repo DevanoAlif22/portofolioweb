@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Risma Paramesti — Fullstack Web Developer</title>
+  <meta name="description" content="Portofolio Risma Paramesti, fullstack web developer yang membangun aplikasi web mulus dan berperforma tinggi." />
+
+  <!-- Fonts: Anton (display), Plus Jakarta Sans (body), JetBrains Mono (detail) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css?v=15" />
+</head>
+<body>
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo">RISMA<span class="star">✦</span></a>
+
+    <nav class="nav__links" aria-label="Navigasi utama">
+      <a href="#about">Tentang</a>
+      <a href="#stack">Keahlian</a>
+      <a href="#work">Portofolio</a>
+      <a href="#experience">Pengalaman</a>
+      <a href="#organisasi">Organisasi</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+
+    <div class="nav__right">
+      <a href="mailto:rismaparamesti@gmail.com" class="pill pill--contact">
+        <span class="pill__dot"></span> rismaparamesti@gmail.com
+      </a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ganti mode gelap/terang" title="Ganti tema">
+        <span class="theme-toggle__icon" aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__rail hero__rail--left">
+        <div class="hero__bio js-reveal">
+          <div class="avatars" aria-hidden="true">
+            <span>R</span><span>P</span><span class="star">✦</span>
+          </div>
+          <p>Fullstack web developer yang mengubah ketekunan akademik menjadi produk nyata berdampak tinggi.</p>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat js-reveal">
+            <span class="stat__num">3.89<small>/4.00</small></span>
+            <span class="stat__label">IPK Kumulatif</span>
+          </div>
+          <div class="stat js-reveal">
+            <span class="stat__num">2+</span>
+            <span class="stat__label">Tahun Pengalaman</span>
+          </div>
+          <div class="stat js-reveal">
+            <span class="stat__num">20%</span>
+            <span class="stat__label">Peningkatan Efisiensi · BPBD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__stage">
+        <h1 class="hero__title" aria-label="Fullstack Developer">
+          <span class="line js-hero-line" data-fill="solid">FULLSTACK</span>
+          <span class="line js-hero-line" data-fill="outline">DEVELOPER</span>
+        </h1>
+
+        <img
+          class="hero__portrait js-parallax"
+          src="assets/img/portrait.png"
+          alt="Foto Risma Paramesti"
+          onerror="this.onerror=null; this.classList.add('is-placeholder'); this.alt=''; this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';"
+        />
+      </div>
+
+      <div class="hero__rail hero__rail--right js-reveal">
+        <p class="hero__note">Membangun antarmuka rapi dan backend yang tangguh untuk klien pemerintahan &amp; enterprise.</p>
+        <div class="hero__btns">
+          <a href="#work" class="btn btn--lime">Lihat Proyek <span class="arrow">↗</span></a>
+          <a href="assets/Risma-Paramesti-CV.pdf" download class="btn btn--ghost">Download CV <span class="arrow">↓</span></a>
+        </div>
+        <span class="hero__badge">Tersertifikasi BNSP · Sidoarjo, ID</span>
+      </div>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee" id="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__group">
+          <b>React.js</b><i>✦</i><b>Node.js</b><i>✦</i><b>Laravel</b><i>✦</i><b>Tailwind CSS</b><i>✦</i><b>MySQL</b><i>✦</i><b>REST API</b><i>✦</i><b>Pengembangan Web Fullstack</b><i>✦</i>
+        </span>
+        <span class="marquee__group">
+          <b>React.js</b><i>✦</i><b>Node.js</b><i>✦</i><b>Laravel</b><i>✦</i><b>Tailwind CSS</b><i>✦</i><b>MySQL</b><i>✦</i><b>REST API</b><i>✦</i><b>Pengembangan Web Fullstack</b><i>✦</i>
+        </span>
+      </div>
+    </div>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services" id="stack">
+      <div class="services__head">
+        <span class="eyebrow js-reveal">✦ Yang saya kerjakan</span>
+        <h2 class="services__title js-reveal">Membangun aplikasi web yang mulus &amp; berperforma tinggi.</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card js-reveal">
+          <span class="card__index">01</span>
+          <h3 class="card__title">Arsitektur Frontend</h3>
+          <p class="card__body">Antarmuka React.js &amp; Next.js, slicing UI presisi piksel, dan pengalaman responsif dengan Tailwind CSS.</p>
+          <div class="ph card__media" data-label="Tambahkan foto">
+            <img src="assets/img/service-1.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+          </div>
+          <ul class="card__tags"><li>React.js</li><li>Next.js</li><li>Tailwind</li><li>UI/UX</li></ul>
+          <a href="#work" class="card__link" aria-label="Lihat karya frontend">↗</a>
+        </article>
+
+        <article class="card card--lime js-reveal">
+          <span class="card__index">02</span>
+          <h3 class="card__title">Backend &amp; Database</h3>
+          <p class="card__body">Layanan Node.js, Express, PHP &amp; Laravel dengan arsitektur data MySQL yang siap berkembang dengan rapi.</p>
+          <div class="ph card__media" data-label="Tambahkan foto">
+            <img src="assets/img/service-2.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+          </div>
+          <ul class="card__tags"><li>Node.js</li><li>Express</li><li>Laravel</li><li>MySQL</li></ul>
+          <a href="#work" class="card__link" aria-label="Lihat karya backend">↗</a>
+        </article>
+
+        <article class="card js-reveal">
+          <span class="card__index">03</span>
+          <h3 class="card__title">Optimasi Sistem</h3>
+          <p class="card__body">Desain REST API, deployment server, serta troubleshooting &amp; pemeliharaan agar produk tetap cepat di produksi.</p>
+          <div class="ph card__media" data-label="Tambahkan foto">
+            <img src="assets/img/service-3.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+          </div>
+          <ul class="card__tags"><li>REST API</li><li>Deploy</li><li>Debugging</li><li>Maintenance</li></ul>
+          <a href="#work" class="card__link" aria-label="Lihat karya optimasi">↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="about">
+      <div class="about__left">
+        <span class="eyebrow eyebrow--dark js-reveal">✦ Tentang saya</span>
+        <h2 class="about__title js-reveal">Keunggulan akademik bertemu dampak nyata.</h2>
+        <p class="about__lead js-reveal">Full Stack Web Developer dengan 2+ tahun pengalaman membangun aplikasi web lewat proyek profesional, akademik, dan magang — mulai dari perancangan, pengembangan, pengujian, hingga implementasi. Terbiasa bekerja kolaboratif, cepat beradaptasi dengan teknologi baru, serta fokus pada solusi yang efisien, andal, dan mudah dipelihara.</p>
+
+        <span class="skillgroup__label js-reveal">Sertifikat</span>
+        <div class="pills js-reveal" aria-label="Sertifikat">
+          <span class="techpill">📜 BNSP Junior Web Programmer</span>
+          <span class="techpill">🎓 Asisten Dosen — Pemrograman Lanjut</span>
+        </div>
+      </div>
+
+      <div class="about__right">
+        <ul class="checklist">
+          <li class="js-reveal">
+            <span class="checklist__ic">🎓</span>
+            <div><strong>UPN Veteran Jawa Timur</strong><span>S1 Sistem Informasi (2022–2026) — IPK 3.89 / 4.00</span></div>
+          </li>
+          <li class="js-reveal">
+            <span class="checklist__ic">🏆</span>
+            <div><strong>Beasiswa Prestasi Akademik Kab. Sidoarjo</strong><span>Penerima hibah prestasi regional, 2025–2028</span></div>
+          </li>
+          <li class="js-reveal">
+            <span class="checklist__ic">📜</span>
+            <div><strong>Junior Web Programmer Tersertifikasi BNSP</strong><span>Sertifikasi profesi tingkat nasional</span></div>
+          </li>
+        </ul>
+
+        <div class="skills">
+          <div class="skillgroup js-reveal">
+            <span class="skillgroup__label">Keahlian Teknis</span>
+            <div class="pills">
+              <span class="techpill">React.js</span><span class="techpill">Next.js</span><span class="techpill">Node.js</span><span class="techpill">Express.js</span><span class="techpill">PHP</span><span class="techpill">Laravel</span><span class="techpill">MySQL</span><span class="techpill">REST API</span><span class="techpill">HTML</span><span class="techpill">CSS</span><span class="techpill">JavaScript</span><span class="techpill">Tailwind CSS</span><span class="techpill">Java</span><span class="techpill">Dart</span><span class="techpill">Visual Basic</span><span class="techpill">OOP</span>
+            </div>
+          </div>
+          <div class="skillgroup js-reveal">
+            <span class="skillgroup__label">Tools &amp; Metode</span>
+            <div class="pills">
+              <span class="techpill techpill--ghost">Figma</span><span class="techpill techpill--ghost">GitHub</span><span class="techpill techpill--ghost">Postman</span><span class="techpill techpill--ghost">XAMPP</span><span class="techpill techpill--ghost">Cpanel</span><span class="techpill techpill--ghost">SCRUM</span><span class="techpill techpill--ghost">Power Designer</span><span class="techpill techpill--ghost">SPSS</span><span class="techpill techpill--ghost">SmartPLS</span><span class="techpill techpill--ghost">Canva</span>
+            </div>
+          </div>
+          <div class="skillgroup js-reveal">
+            <span class="skillgroup__label">Soft Skill</span>
+            <div class="pills">
+              <span class="techpill techpill--ghost">Public Speaking</span><span class="techpill techpill--ghost">Kerja Tim</span><span class="techpill techpill--ghost">Kepemimpinan</span><span class="techpill techpill--ghost">Problem Solving</span><span class="techpill techpill--ghost">Komunikatif</span>
+            </div>
+          </div>
+          <div class="skillgroup js-reveal">
+            <span class="skillgroup__label">Bahasa</span>
+            <div class="pills">
+              <span class="techpill techpill--ghost">Indonesia (Fasih)</span><span class="techpill techpill--ghost">Inggris (Basic)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="work" id="work">
+      <div class="work__head">
+        <span class="eyebrow js-reveal">✦ Karya pilihan</span>
+        <h2 class="work__title js-reveal">Proyek yang menggerakkan angka nyata.</h2>
+      </div>
+
+      <article class="project js-reveal">
+        <div class="ph project__media" data-label="Foto / screenshot proyek">
+          <img src="assets/img/project-1.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+        </div>
+        <div class="project__content">
+          <div class="project__meta">
+            <span class="project__no">P·01</span>
+            <span class="project__tag">Web Fullstack / Pemerintahan</span>
+          </div>
+          <h3 class="project__name">Sistem Manajemen Data Pencegahan Bencana</h3>
+          <p class="project__client">BPBD Kota Surabaya</p>
+          <p class="project__desc">Merapikan data sosialisasi kebencanaan ke dalam satu sistem manajemen — mempercepat pengambilan keputusan hingga <strong>20%</strong>. UI/UX (Figma), front-end React.js, back-end Node.js + REST API, hingga deployment ke server hosting.</p>
+          <ul class="project__tech"><li>React.js</li><li>Node.js</li><li>REST API</li><li>Figma</li></ul>
+          <a class="project__link" href="#" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="project project--alt js-reveal">
+        <div class="ph project__media" data-label="Foto / screenshot proyek">
+          <img src="assets/img/project-2.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+        </div>
+        <div class="project__content">
+          <div class="project__meta">
+            <span class="project__no">P·02</span>
+            <span class="project__tag">Aplikasi Web Fullstack</span>
+          </div>
+          <h3 class="project__name">Sistem Point of Sales (POS)</h3>
+          <p class="project__client">PT. Otak Kanan</p>
+          <p class="project__desc">Antarmuka responsif (React.js + Tailwind CSS), back-end Node.js untuk logika server &amp; API, serta basis data MySQL untuk menjaga integritas dan keamanan data transaksi.</p>
+          <ul class="project__tech"><li>React.js</li><li>Tailwind CSS</li><li>Node.js</li><li>MySQL</li></ul>
+          <a class="project__link" href="#" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="project js-reveal">
+        <div class="ph project__media" data-label="Foto / screenshot proyek">
+          <img src="assets/img/project-3.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+        </div>
+        <div class="project__content">
+          <div class="project__meta">
+            <span class="project__no">P·03</span>
+            <span class="project__tag">Skripsi / Backend Engineering</span>
+          </div>
+          <h3 class="project__name">Rancang Bangun Ulang Backend SIM Pegawai</h3>
+          <p class="project__client">PT. Otak Kanan · Penelitian Skripsi</p>
+          <p class="project__desc">Membangun ulang backend Sistem Informasi Manajemen Pegawai dengan metodologi <strong>Scrum</strong>: autentikasi, presensi, cuti, penggajian, reimbursement, rekrutmen, hingga dashboard berbasis peran (role-based access).</p>
+          <ul class="project__tech"><li>Node.js</li><li>Express.js</li><li>REST API</li><li>MySQL</li><li>Scrum</li></ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="experience" id="experience">
+      <div class="experience__head">
+        <span class="eyebrow eyebrow--dark js-reveal">✦ Rekam jejak</span>
+        <h2 class="experience__title js-reveal">Tempat saya membangun &amp; mengajar.</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item js-reveal">
+          <div class="ph timeline__thumb" data-label="">
+            <img src="assets/img/exp-1.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+          </div>
+          <span class="timeline__date">Mar 2025 — Jun 2025</span>
+          <div class="timeline__body">
+            <h3>Fullstack Web Developer <em>· Intern</em></h3>
+            <p>BPBD Kota Surabaya</p>
+            <p class="timeline__detail">UI/UX di Figma, front-end React.js, back-end Node.js + REST API, hingga deployment ke server hosting.</p>
+          </div>
+        </li>
+        <li class="timeline__item js-reveal">
+          <div class="ph timeline__thumb" data-label="">
+            <img src="assets/img/exp-2.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+          </div>
+          <span class="timeline__date">Sep 2024 — Des 2024</span>
+          <div class="timeline__body">
+            <h3>Fullstack Web Developer <em>· Intern</em></h3>
+            <p>PT. Otak Kanan</p>
+            <p class="timeline__detail">Antarmuka responsif (React.js + Tailwind CSS), back-end Node.js, serta perancangan &amp; pengelolaan basis data MySQL.</p>
+          </div>
+        </li>
+        <li class="timeline__item js-reveal">
+          <div class="ph timeline__thumb" data-label="">
+            <img src="assets/img/exp-3.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+          </div>
+          <span class="timeline__date">Jun 2024 — Jul 2024</span>
+          <div class="timeline__body">
+            <h3>Asisten Dosen — Pemrograman Lanjut</h3>
+            <p>UPN Veteran Jawa Timur</p>
+            <p class="timeline__detail">Mendampingi praktikum &amp; tugas pemrograman untuk 45+ mahasiswa dalam memahami materi.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== ORGANISASI ===================== -->
+    <section class="org" id="organisasi">
+      <div class="org__head">
+        <span class="eyebrow js-reveal">✦ Di luar kode</span>
+        <h2 class="org__title js-reveal">Organisasi &amp; kepanitiaan.</h2>
+      </div>
+
+      <div class="org__grid">
+        <article class="orgcard js-reveal">
+          <div class="ph orgcard__media" data-label="Tambahkan foto">
+            <img src="assets/img/org-1.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+          </div>
+          <span class="orgcard__date">2024 — 2025</span>
+          <h3 class="orgcard__role">Sekretaris Umum</h3>
+          <p class="orgcard__org">Duta Pepelingasih Sidoarjo</p>
+          <p class="orgcard__desc">Mengelola administrasi &amp; persuratan organisasi serta arsip kesekretariatan, berkoordinasi dengan ketua umum dan ketua bidang.</p>
+        </article>
+
+        <article class="orgcard js-reveal">
+          <div class="ph orgcard__media" data-label="Tambahkan foto">
+            <img src="assets/img/org-2.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+          </div>
+          <span class="orgcard__date">Mar 2024</span>
+          <h3 class="orgcard__role">Ketua Pelaksana</h3>
+          <p class="orgcard__org">Bincang Administrasi &amp; Jurnalistik</p>
+          <p class="orgcard__desc">Memimpin 40 anggota panitia (3 divisi) lewat rapat progres dan pengambilan keputusan; acara tercapai dengan 30 peserta.</p>
+        </article>
+
+        <article class="orgcard js-reveal">
+          <div class="ph orgcard__media" data-label="Tambahkan foto">
+            <img src="assets/img/org-3.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+          </div>
+          <span class="orgcard__date">Jul — Nov 2023</span>
+          <h3 class="orgcard__role">Koordinator Divisi Humas</h3>
+          <p class="orgcard__org">Pemilihan Duta Pepelingasih Sidoarjo</p>
+          <p class="orgcard__desc">Mengoordinasi 8 anggota &amp; lintas divisi; berhasil menggaet 40 sponsor (dana, produk) dan 4 media partner.</p>
+        </article>
+
+        <article class="orgcard js-reveal">
+          <div class="ph orgcard__media" data-label="Tambahkan foto">
+            <img src="assets/img/org-4.jpg" alt="" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';">
+          </div>
+          <span class="orgcard__date">Okt 2022</span>
+          <h3 class="orgcard__role">Peserta &amp; Panitia</h3>
+          <p class="orgcard__org">Pelatihan LKMM-TD</p>
+          <p class="orgcard__desc">Menerapkan hasil pelatihan kepemimpinan dengan menyelenggarakan Connection Day untuk ±500 peserta seangkatan.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== CTA / FOOTER ===================== -->
+    <footer class="cta" id="contact">
+      <span class="eyebrow js-reveal">✦ Mari bicara</span>
+      <h2 class="cta__title js-reveal">Mari ciptakan sesuatu yang luar biasa bersama.</h2>
+
+      <div class="cta__actions js-reveal">
+        <button class="btn btn--lime" id="copyEmail" type="button" data-email="rismaparamesti@gmail.com">
+          Salin Email <span class="arrow">⧉</span>
+        </button>
+        <a href="assets/Risma-Paramesti-CV.pdf" download class="btn btn--lime">Download CV <span class="arrow">↓</span></a>
+        <a href="https://wa.me/6281334118284" class="btn btn--ghost" target="_blank" rel="noopener">WhatsApp ↗</a>
+      </div>
+
+      <ul class="cta__links">
+        <li><span>Email</span><a href="mailto:rismaparamesti@gmail.com">rismaparamesti@gmail.com</a></li>
+        <li><span>Telepon / WA</span><a href="https://wa.me/6281334118284" target="_blank" rel="noopener">0813 3411 8284</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/risma-paramesti/" target="_blank" rel="noopener">/in/risma-paramesti</a></li>
+        <li><span>Portofolio</span><a href="https://rismaparamesti-portofolio.vercel.app/" target="_blank" rel="noopener">rismaparamesti-portofolio.vercel.app</a></li>
+        <li><span>GitHub</span><a href="#" target="_blank" rel="noopener">@rismaparamesti</a></li>
+      </ul>
+
+      <div class="cta__foot">
+        <span class="cta__logo">RISMA<span class="star">✦</span></span>
+        <span>© <span id="year"></span> Risma Paramesti — Fullstack Web Developer</span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Toast konfirmasi salin -->
+  <div class="toast" id="toast" role="status" aria-live="polite">Email disalin ✦</div>
+
+  <!-- GSAP + ScrollTrigger (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js?v=15"></script>
+</body>
+</html>
