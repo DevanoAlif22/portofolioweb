@@ -24,6 +24,45 @@
     });
   }
 
+  /* ---------- Mobile menu ---------- */
+  var burger = document.getElementById("navBurger");
+  var menu = document.getElementById("mobileMenu");
+  if (burger && menu) {
+    var menuOpen = false;
+    var setMenu = function (open) {
+      menuOpen = open;
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.setAttribute("aria-label", open ? "Tutup menu" : "Buka menu");
+      burger.classList.toggle("is-open", open);
+      document.body.classList.toggle("menu-open", open);
+      if (open) {
+        menu.hidden = false;
+        if (window.gsap) {
+          gsap.fromTo(menu, { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" });
+          gsap.fromTo(menu.querySelectorAll("a"),
+            { y: 24, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.4, stagger: 0.06, ease: "power3.out", delay: 0.05 });
+        }
+      } else if (window.gsap) {
+        gsap.to(menu, { opacity: 0, duration: 0.25, ease: "power2.in",
+          onComplete: function () { menu.hidden = true; } });
+      } else {
+        menu.hidden = true;
+      }
+    };
+    burger.addEventListener("click", function () { setMenu(!menuOpen); });
+    menu.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () { setMenu(false); });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && menuOpen) setMenu(false);
+    });
+    /* Close if resized up to desktop while open */
+    window.addEventListener("resize", function () {
+      if (menuOpen && window.innerWidth > 900) setMenu(false);
+    });
+  }
+
   /* ---------- Copy email + toast ---------- */
   var copyBtn = document.getElementById("copyEmail");
   var toast = document.getElementById("toast");

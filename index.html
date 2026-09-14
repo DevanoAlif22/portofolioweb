@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="assets/css/style.css?v=15" />
+  <link rel="stylesheet" href="assets/css/style.css?v=16" />
 </head>
 <body>
   <!-- ===================== NAV ===================== -->
@@ -34,8 +34,24 @@
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ganti mode gelap/terang" title="Ganti tema">
         <span class="theme-toggle__icon" aria-hidden="true">◐</span>
       </button>
+      <button class="nav__burger" id="navBurger" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile menu -->
+  <div class="mobilemenu" id="mobileMenu" hidden>
+    <nav class="mobilemenu__links" aria-label="Navigasi mobile">
+      <a href="#about">Tentang</a>
+      <a href="#stack">Keahlian</a>
+      <a href="#work">Portofolio</a>
+      <a href="#experience">Pengalaman</a>
+      <a href="#organisasi">Organisasi</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+    <a href="assets/Risma-Paramesti-CV.pdf" download class="btn btn--lime">Download CV <span class="arrow">↓</span></a>
+  </div>
 
   <main id="top">
     <!-- ===================== HERO ===================== -->
@@ -388,6 +404,6 @@
   <!-- GSAP + ScrollTrigger (CDN) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-  <script src="assets/js/main.js?v=15"></script>
+  <script src="assets/js/main.js?v=16"></script>
 </body>
 </html>
